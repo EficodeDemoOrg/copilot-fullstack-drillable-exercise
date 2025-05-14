@@ -140,7 +140,6 @@ The backend provides the following REST API endpoints:
       "createdAt": "2025-05-01T12:00:00Z",
       "updatedAt": "2025-05-01T12:00:00Z"
     },
-    ...
   ]
   ```
 
@@ -183,4 +182,4 @@ The backend provides the following REST API endpoints:
 - Deletes a note by ID
 - Returns a success message and the deleted note
 
-For more detailed API documentation, see the [backend README](./backend/README.md).
+For more detailed API documentation, see the backend [README](./backend/README.md).
