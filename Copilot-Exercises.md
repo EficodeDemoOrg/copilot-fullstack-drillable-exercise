@@ -7,7 +7,7 @@ This document provides a series of exercises designed to help you learn and prac
 * **Chat View:** Used for asking questions, generating code/tests/docs, and initiating actions. Modes like "Ask" (default), "Edits", and "Agent" might be selectable via a dropdown menu within the Chat view interface itself.
 * **Inline Chat:** Quick chat directly in the editor (Default: `Cmd+I` / `Ctrl+I`), often used for quick explanations or edits on selected code. Allows reviewing multiple suggestions using keyboard shortcuts (e.g., `Alt+]`/`Option+]` or check the Command Palette for "Copilot: View Next/Previous Suggestion").
 * **Participants (`@` references):** Used to bring specific, broad contexts into the chat, such as the entire workspace (`@workspace`) or the VS Code environment itself (`@vscode`). **Important Limitation:** You can only use **one participant** (e.g., `@workspace` OR `@vscode`) in a single chat prompt.
-* **Variables (`#` references):** Used to provide more granular context to Copilot (e.g., files `#file`, selections `#selection`, symbols `#sym`, symbol usages/definitions `#usage`, changes `#changes`, codebase structure `#codebase`, web content `#fetch`, last terminal command `#terminalLastCommand`, terminal selection `#terminalSelection`). Variables *can* be combined with a participant (e.g., `@workspace #file:SomeFile.java`).
+* **Variables (`#` references):** Used to provide more granular context to Copilot (e.g., files `#file`, selections `#selection`, symbols `#sym`, symbol usages/definitions `#usage`, changes `#changes`, codebase structure `#codebase`, web content `#fetch`, last terminal command `#terminalLastCommand`, terminal selection `#terminalSelection`). Variables *can* be combined with a participant (e.g., `@workspace #file:SomeFile`).
     * **Interactive Selection:** For files, folders, symbols (`#sym`), and usage queries (`#usage`), you typically type `#` and then start typing the name; VS Code's UI will suggest matching items from your workspace for you to select easily.
     * **Drag and Drop:** You can also often drag files or folders directly from the VS Code Explorer into the Chat input area to add them as context.
 * **Slash Commands:** Used within the Chat view or inline chat to direct Copilot's actions (e.g., `/explain`, `/tests`, `/fix`, `/new`).
@@ -304,7 +304,7 @@ These exercises generally use `@workspace` for broad "Ask" queries and `#codebas
 
 ### Exercise 3.1: Implementing Note Categories (Code Completion & Edits Mode)
 
-* **Purpose:** Implement the note categorization feature from Backlog 2, adding categories to notes and filtering by category.
+* **Purpose:** Implement the note categorization feature, adding categories to notes and filtering by category.
 * **Aim:** Practice using code completion and Edits mode to add features based on user requirements.
 * **Steps:**
     1.  **Backend Changes (Edits Mode):** 

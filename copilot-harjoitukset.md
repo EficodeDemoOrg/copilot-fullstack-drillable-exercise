@@ -7,7 +7,7 @@ Tämä dokumentti tarjoaa sarjan harjoituksia, joiden avulla opit ja harjoittele
 * **Chat-näkymä:** Käytetään kysymysten esittämiseen, koodin/testien/dokumentaation generointiin ja toimintojen käynnistämiseen. Tilat kuten "Ask" (oletus), "Edits" ja "Agent" voivat olla valittavissa chat-näkymän valikosta.
 * **Inline Chat:** Nopea keskustelu suoraan editorissa (Oletus: `Cmd+I` / `Ctrl+I`), usein käytetään nopeisiin selityksiin tai valitun koodin muokkaukseen. Useita ehdotuksia voi selata pikanäppäimillä (esim. `Alt+]`/`Option+]` tai Komentopaletti: "Copilot: View Next/Previous Suggestion").
 * **Osallistujat (`@`-viittaukset):** Tuovat laajaa kontekstia keskusteluun, kuten koko työtilan (`@workspace`) tai VS Code -ympäristön (`@vscode`). **Tärkeä rajoitus:** Vain **yksi osallistuja** (esim. `@workspace` TAI `@vscode`) per chat-kysymys.
-* **Muuttujat (`#`-viittaukset):** Antavat tarkempaa kontekstia Copilotille (esim. tiedostot `#file`, valinnat `#selection`, symbolit `#sym`, symbolin käytöt/määrittelyt `#usage`, muutokset `#changes`, koodipohjan rakenne `#codebase`, verkkosisältö `#fetch`, viimeisin terminaalikomento `#terminalLastCommand`, terminaalivalinta `#terminalSelection`). Muuttujia *voi* yhdistää osallistujaan (esim. `@workspace #file:SomeFile.java`).
+* **Muuttujat (`#`-viittaukset):** Antavat tarkempaa kontekstia Copilotille (esim. tiedostot `#file`, valinnat `#selection`, symbolit `#sym`, symbolin käytöt/määrittelyt `#usage`, muutokset `#changes`, koodipohjan rakenne `#codebase`, verkkosisältö `#fetch`, viimeisin terminaalikomento `#terminalLastCommand`, terminaalivalinta `#terminalSelection`). Muuttujia *voi* yhdistää osallistujaan (esim. `@workspace #file:SomeFile`).
     * **Interaktiivinen valinta:** Tiedostoille, kansioille, symboleille (`#sym`) ja käyttöhaulle (`#usage`) voit kirjoittaa `#` ja alkaa kirjoittaa nimeä; VS Code ehdottaa vastaavia kohteita työtilasta.
     * **Raahaa ja pudota:** Voit myös raahata tiedostoja tai kansioita suoraan Explorerista chatin syötekenttään.
 * **Slash-komennot:** Ohjaavat Copilotin toimintaa chatissa tai inline chatissa (esim. `/explain`, `/tests`, `/fix`, `/new`).
@@ -211,7 +211,7 @@ Näissä harjoituksissa käytetään yleensä `@workspace`-osallistujaa laajoihi
 
 ### Harjoitus 3.1: Muistiinpanokategorioiden toteutus (koodin täydennys & Edits-tila)
 
-* **Tarkoitus:** Toteuttaa muistiinpanojen kategorisointi Backlog 2:n mukaisesti, lisätä kategoriat muistiinpanoihin ja mahdollisuus suodattaa kategorian mukaan.
+* **Tarkoitus:** Toteuttaa muistiinpanojen kategorisointi, lisätä kategoriat muistiinpanoihin ja mahdollisuus suodattaa kategorian mukaan.
 * **Tavoite:** Harjoittele koodin täydennystä ja Edits-tilaa ominaisuuksien lisäämiseksi käyttäjävaatimusten pohjalta.
 * **Vaiheet:**
     1.  **Backend-muutokset (Edits-tila):**
